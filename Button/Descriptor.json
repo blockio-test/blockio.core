@@ -1,0 +1,22 @@
+{
+  "Name": "Button",
+  "Category": "Class",
+  "Properties": [
+    {
+      "Name": "GpioPort",
+      "Type": "integer",
+      "Default": -1
+    }
+  ],
+  "Outputs": [
+    {
+      "Name": "Out",
+      "Type": "bool",
+      "Runtime": "getValue"
+    }
+  ],
+  "Template": "Button.hpp",
+  "Dependencies": [
+    "blockio.gpio"
+  ]
+}

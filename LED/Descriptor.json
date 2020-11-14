@@ -1,0 +1,30 @@
+{
+  "Name": "Led",
+  "Category": "Class",
+  "Properties": [
+    {
+      "Name": "GpioPort",
+      "Type": "integer",
+      "Default": -1
+    }
+  ],
+  "Inputs": [
+    {
+      "Name": "In",
+      "Type": "bool"
+    }
+  ],
+  "Outputs": [
+    {
+      "Name": "Out",
+      "Type": "void", // void, none, null, "" -> these should be accepted
+      "IsHidden": true,
+      "DependsOn": [ "In" ],
+      "Runtime": "setValue"
+    }
+  ],
+  "Template": "Led.hpp",
+  "dependencies": [
+    "blockio.gpio"
+  ]
+}

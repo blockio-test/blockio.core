@@ -1,0 +1,26 @@
+{
+  "Name": "Or",
+  "Category": "Function",
+  "Inputs": [
+    {
+      "Name": "A",
+      "Type": "bool"
+    },
+    {
+      "Name": "B",
+      "Type": "bool"
+    }
+  ],
+  "Outputs": [
+    {
+      "Name": "Out",
+      "Type": "bool", 
+      "IsHidden": false,
+      "DependsOn": [ "A", "B" ],
+      "Runtime": "logicOr"
+    }
+  ],
+  "Template": "Or.hpp",
+  "dependencies": [
+  ]
+}

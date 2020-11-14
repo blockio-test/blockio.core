@@ -1,0 +1,26 @@
+{
+  "Name": "And",
+  "Category": "Function",
+  "Inputs": [
+    {
+      "Name": "A",
+      "Type": "bool"
+    },
+    {
+      "Name": "B",
+      "Type": "bool"
+    }
+  ],
+  "Outputs": [
+    {
+      "Name": "Out",
+      "Type": "bool", 
+      "IsHidden": false,
+      "DependsOn": [ "A", "B" ],
+      "Runtime": "logicAnd"
+    }
+  ],
+  "Template": "And.hpp",
+  "dependencies": [
+  ]
+}

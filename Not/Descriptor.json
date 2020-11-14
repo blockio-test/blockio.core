@@ -1,0 +1,22 @@
+{
+  "Name": "Not",
+  "Category": "Function",
+  "Inputs": [
+    {
+      "Name": "In",
+      "Type": "bool"
+    }
+  ],
+  "Outputs": [
+    {
+      "Name": "Out",
+      "Type": "bool", 
+      "IsHidden": false,
+      "DependsOn": [ "In" ],
+      "Runtime": "logicNot"
+    }
+  ],
+  "Template": "Not.hpp",
+  "dependencies": [
+  ]
+}
